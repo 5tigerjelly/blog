@@ -46,6 +46,25 @@ export default function PageTemplate({ data: { mdx, site }, pageContext }) {
           <MDXRenderer scope={{ Embed }}>{mdx.code.body}</MDXRenderer>
         </article>
         <footer className="container small">
+          <small>
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={`https://twitter.com/search?q=${publicUrl}`}
+            >
+              Discuss on Twitter
+            </a>{' '}
+            &middot;{' '}
+            <a
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              href={`${site.siteMetadata.githubUrl}/edit/master/content${
+                mdx.fields.slug
+              }index.mdx`}
+            >
+              Edit this post on GitHub
+            </a>
+          </small>
           <hr
             style={{
               margin: `24px 0`,
