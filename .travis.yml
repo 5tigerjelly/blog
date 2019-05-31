@@ -1,20 +1,25 @@
 language: node_js
 node_js:
-  - '12'
-
-cache:
-  directories:
-    - node_modules
-
-notifications:
-  email: false
-
-jobs:
-  include:
-    - stage: Test
-      install: npm ci
-      script: npm run test
-    - stage: Lighthouse
-      if: type = pull_request
-      install: npm ci
-      script: npm run lh --perf 90 --pwa 90 --a11y 90 --bp 90 --seo 90 "$(wait-for-netlify-preview)"
+  - "8"
+cache: yarn
+addons:
+  apt:
+    packages:
+      - g++-4.8
+    sources:
+      - ubuntu-toolchain-r-test
+env:
+  CXX=g++-4.8
+branches:
+  only:
+    - master
+before_script:
+  # If you're have troubles with firebase/firebase-tools#382
+  # - "yarn global add https://github.com/firebase/firebase-tools"
+  - "yarn global add firebase-tools"
+  - "yarn global add gatsby"
+script:
+  - "yarn test"
+  - "yarn build:prod"
+after_success:
+  - "firebase deploy --token=${FIREBASE_API_TOKEN}"

@@ -59,6 +59,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build:prod": "yarn build -- --prefix-links",
+    "deploy": "yarn build:prod && firebase deploy",
     "dev": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "lh": "lighthousebot",
