@@ -1,0 +1,23 @@
+---
+title: "Coding interviews. Yuck."
+description: "Let’s do a run down. First, choose your language. It doesn’t matter most of the time which language you choose if it is one of the major languages. However, you can be safe by choosing Java…"
+date: "2017-03-01T20:27:36.539Z"
+categories: 
+  - Interview
+  - Coding
+
+published: true
+canonicalLink: https://medium.com/@5tigerjelly/coding-interviews-yuck-ea5fd9fc069c
+---
+
+But what can you say? It’s become the standard for almost every company you will want to work for.
+
+Let’s do a run down. First, choose your language. It doesn’t matter most of the time which language you choose if it is one of the major languages. However, you can be safe by choosing Java. Personally, I love Python. I learned Python in a week, and now I do all my interviews in Python. If you don’t know which language might be easier or better to use during a coding interview, go with one you learned first or feel most comfortable with. It takes time to learn a new language, so if you are in a hurry, just stick with one you are familiar with for now and learn a new language when you have time. If you don’t know any language, then I recommend Python, it is simple and clean.
+
+Next, if you just finished a intro to programming course on Java, Python, C++, C# or anything else, please learn Data Structures and Algorithms (DSA)! DSA are the fundamental knowledge expected during coding interviews. Please actually take the time to read the textbooks from your course. I recommend the book, [“Introduction to Algorithms”](http://amzn.to/2mFYyn8). There are numerous concepts that I learn from the textbooks that ends up in coding interviews.
+
+Then, once you have the basic knowledge of how programs work and how to code them, great! This is an important step, go to Amazon and purchase the book, [“Cracking the Coding Interview”](http://amzn.to/2lUCvKX). This book is considered the Bible in the programming world. If this is your first time hearing about this book, it’s okay! I only found out about it during my internship, which was after one full year in the Informatics program. The book is really thick, which might intimidate you at first. But, the actual book itself is only 1/3 of the entire book and the rest are explanations on the questions.
+
+Also, there are hundreds if not thousands of online resources which has coding questions for you to practice on. I will share a few of the online resources I use the most. The most popular websites that I know of is [Leetcode](https://goo.gl/a1xZ3R) and [HackerRank](https://goo.gl/AhHa1X). I used these two the most when preparing for interviews. Go to these websites and practice the hell out of them. There is no better way to explain. Allocate a few hours of your time every week to sit down and solve questions from there. From my experience, a good question usually take about 30 minutes to solve. Also for the sake of practice, try to solve it on a whiteboard and talk through it on what you will be doing. This will be exactly what is expected during interviews. You will most likely be interviewed by someone who will take note of your thought process, and not just your code alone.
+
+Object Oriented Programing (OOP) and Design. This is another huge topic that should be in it’s separate post. But, I will touch on it a little. When you need to write a small program, a few lines might get the job done. However, when the size of the project grows, you will be creating multiple classes and defining objects. These so-called objects have fields and methods which you can create and then use. A famous question you might have heard of is the ‘parking lot’ question. I also heard about this for the first time not so long ago. I was really confused by what the question was aiming at and how this ties to the OOP design. Well, the question is asking can you modulate those objects and give those objects a functionality. For example, in a parking lot, there can a parking space. A floor will have multiple parking spaces. The parking lot will have multiple floors. These will be considered the fields of the ‘parking lot’ object. Then you can think of methods such as is the parking lot full? which could return a true or false value. There are usually endless amounts of possibilities to designing a object. So if you are given a OOP design question, you just have to try your best to show that you know and can think about all the possible cases and functionality.
