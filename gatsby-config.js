@@ -19,8 +19,8 @@ const configuration = {
     twitter: '',
     medium: '@5tigerjelly',
     facebook: '',
-    github: '',
-    linkedin: '',
+    github: '5tigerjelly',
+    linkedin: 'bummookoh',
     instagram: '',
   },
 }
